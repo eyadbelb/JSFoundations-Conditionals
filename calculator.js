@@ -14,14 +14,16 @@ const operation = prompt("Please choose the operation (+, -, /, *) ");
 num1 = parseInt(num1);
 num2 = parseInt(num2);
 
-if (operation === "+") {
-  console.log(num1 + num2);
-} else if (operation === "-") {
-  console.log(num1 - num2);
-} else if (operation === "/") {
-  console.log(num1 / num2);
-} else if (operation === "*") {
-  console.log(num1 * num2);
-} else {
-  console.log("operation is not valid. ");
-}
+if (num1 && num2) {
+  if (operation === "+") {
+    console.log(num1 + num2);
+  } else if (operation === "-") {
+    console.log(num1 - num2);
+  } else if (operation === "/") {
+    console.log(num1 / num2);
+  } else if (operation === "*") {
+    console.log(num1 * num2);
+  } else {
+    console.log("operation is not valid. ");
+  }
+} else console.log("invalid number");
